@@ -1,0 +1,8 @@
+
+if [[ $1%2 -eq 0 ]]
+then
+	echo "even"
+else
+	echo "odd"
+fi
+
