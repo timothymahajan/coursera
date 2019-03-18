@@ -1,6 +1,6 @@
 echo "Start program"
 
-if [[ $1  =~ "^[A-Z]*" ]]
+if [[ $1  =~ ^[A-Z] ]]
 then
 	echo "how proper"
 else

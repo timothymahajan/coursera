@@ -1,3 +1,4 @@
+# adlib game. User enters adjective, noun, and verb, and sentence is made
 echo "Please enter an adjective:"
 read adjective
 echo "Please enter a noun:"
