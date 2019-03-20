@@ -21,3 +21,5 @@ function guessinggame {
 		fi
 	done
 }
+
+guessinggame
