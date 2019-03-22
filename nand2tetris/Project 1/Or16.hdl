@@ -1,0 +1,61 @@
+// This file is part of www.nand2tetris.org
+// and the book "The Elements of Computing Systems"
+// by Nisan and Schocken, MIT Press.
+// File name: projects/01/Or16.hdl
+
+/**
+ * 16-bit bitwise Or:
+ * for i = 0..15 out[i] = (a[i] or b[i])
+ */
+
+CHIP Or16 {
+    IN a[16], b[16];
+    OUT out[16];
+
+    PARTS:
+    Nand (a=a[0], b=a[0], out=nandaa0);
+	Nand (a=b[0], b=b[0], out=nandbb0);
+	Nand (a=nandaa0, b=nandbb0, out=out[0]);
+	Nand (a=a[1], b=a[1], out=nandaa1);
+	Nand (a=b[1], b=b[1], out=nandbb1);
+	Nand (a=nandaa1, b=nandbb1, out=out[1]);
+	Nand (a=a[2], b=a[2], out=nandaa2);
+	Nand (a=b[2], b=b[2], out=nandbb2);
+	Nand (a=nandaa2, b=nandbb2, out=out[2]);
+	Nand (a=a[3], b=a[3], out=nandaa3);
+	Nand (a=b[3], b=b[3], out=nandbb3);
+	Nand (a=nandaa3, b=nandbb3, out=out[3]);
+	Nand (a=a[4], b=a[4], out=nandaa4);
+	Nand (a=b[4], b=b[4], out=nandbb4);
+	Nand (a=nandaa5, b=nandbb5, out=out[5]);
+	Nand (a=a[6], b=a[6], out=nandaa6);
+	Nand (a=b[6], b=b[6], out=nandbb6);
+	Nand (a=nandaa6, b=nandbb6, out=out[6]);
+	Nand (a=a[7], b=a[7], out=nandaa7);
+	Nand (a=b[7], b=b[7], out=nandbb7);
+	Nand (a=nandaa7, b=nandbb7, out=out[7]);
+	Nand (a=a[8], b=a[8], out=nandaa8);
+	Nand (a=b[8], b=b[8], out=nandbb8);
+	Nand (a=nandaa8, b=nandbb8, out=out[8]);
+	Nand (a=a[9], b=a[9], out=nandaa9);
+	Nand (a=b[9], b=b[9], out=nandbb9);
+	Nand (a=nandaa9, b=nandbb9, out=out[9]);
+	Nand (a=a[10], b=a[10], out=nandaa10);
+	Nand (a=b[10], b=b[10], out=nandbb10);
+	Nand (a=nandaa10, b=nandbb10, out=out[10]);
+	Nand (a=a[11], b=a[11], out=nandaa11);
+	Nand (a=b[11], b=b[11], out=nandbb11);
+	Nand (a=nandaa11, b=nandbb11, out=out[11]);
+	Nand (a=a[12], b=a[12], out=nandaa12);
+	Nand (a=b[12], b=b[12], out=nandbb12);
+	Nand (a=nandaa12, b=nandbb12, out=out[12]);
+	Nand (a=a[13], b=a[13], out=nandaa13);
+	Nand (a=b[13], b=b[13], out=nandbb13);
+	Nand (a=nandaa13, b=nandbb13, out=out[13]);
+	Nand (a=a[14], b=a[14], out=nandaa14);
+	Nand (a=b[14], b=b[14], out=nandbb14);
+	Nand (a=nandaa14, b=nandbb14, out=out[14]);
+	Nand (a=a[15], b=a[15], out=nandaa15);
+	Nand (a=b[15], b=b[15], out=nandbb15);
+	Nand (a=nandaa15, b=nandbb15, out=out[15];
+}
